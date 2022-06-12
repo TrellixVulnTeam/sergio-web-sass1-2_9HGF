@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Montserrat' , sans-serif;
+  background-image: url(../img/fondo.png);
+  background-size: contain; }
+
+/* ======================================================================*/
+/* ----------BARRA Welcome! ---------- */
+.welcome {
+  background-color: #d9bb96;
+  font-size: 15px;
+  color: #000;
+  text-align: center; }
+
+/* --------------FIN barra welcome!------------------ */
+/* ======================================================================*/
+/* -------GRID al INDEX------- */
+.grid-container {
+  min-height: 1000px;
+  grid-template-areas: "header header header header" "main   main   main   main" "section section section section" "footer footer footer footer"; }
+
+/* -------------FIN GRID---------------- */
+/* ======================================================================*/
+/*--------------------- INICIA Header--------------------- */
+header {
+  height: max-content;
+  background-color: #152d35;
+  color: #fff;
+  font-size: 20px; }
+  header .logotipe {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px; }
+  header nav {
+    margin-left: 26vw; }
+    header nav li {
+      padding: 10px; }
+      header nav li a {
+        text-decoration: none;
+        background-image: linear-gradient(#152d35, #00acb5);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s; }
+        header nav li a:hover {
+          background-size: 100% 2px; }
+
+/*--------------------------- FIN header------------ */
+/* ======================================================================*/
+/* -------------------INICIO Main------------------ */
+main {
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  background-image: url(../img/slideopaco.jpg);
+  background-size: cover; }
+  main h1 {
+    text-align: center;
+    color: #000;
+    font-size: 2.5em; }
+    main h1 span {
+      color: #00acb5; }
+  main p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000;
+    font-size: 16px; }
+  main .img-principal {
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1seg; }
+    main .img-principal .img-principal:hover {
+      transition: all 0.7s;
+      filter: sepia(0%);
+      transform: scale(1.05); }
+  main .clicks {
+    font-family: inherit;
+    font-size: 15px;
+    background: #00acb5;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: all 0.2s; }
+    main .clicks .clicks:hover {
+      animation: fly-1 0.6s ease-in-out infinite alternate;
+      background-color: #d9bb96; }
+
+/* -------------------FIN MAIN-------------- */
+/* ======================================================================*/
+/* ----------------SECTIONs INICIAn -------------- */
+/* CARDS DE HTML CSS Y JS */
+section .container {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 10px;
+  width: 100%;
+  padding: 50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 10px; }
+  section .container .card {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    font-size: 10px; }
+    section .container .card .face {
+      width: 300px;
+      height: 200px;
+      transition: .4s; }
+    section .container .card .face.face1 {
+      position: relative;
+      width: 100%;
+      background: #152d35;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      z-index: 1;
+      transform: translateY(100px); }
+      section .container .card .face.face1:hover {
+        transform: translateY(0);
+        background-color: #00acb5; }
+      section .container .card .face.face1 .content {
+        opacity: .8;
+        transition: 0.5s;
+        text-align: center; }
+        section .container .card .face.face1 .content i {
+          font-size: 3em;
+          color: #fff;
+          display: inline-block; }
+        section .container .card .face.face1 .content h3 {
+          font-size: 1.5em;
+          color: #fff;
+          text-align: center; }
+  section .container .face .face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-100px); }
+    section .container .face .face2:hover .face.face2 {
+      transform: translateY(0); }
+    section .container .face .face2 p {
+      font-size: 10pt;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      color: #000; }
+
+/* FIN SECTION1 HTML CSS Y JS */
+/* SERVICIOS INICIA SECTION 2 */
+.wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .wrapper .servicios {
+    text-align: center; }
+    .wrapper .servicios i {
+      font-size: 30px;
+      color: #00acb5; }
+    .wrapper .servicios div {
+      text-align: center; }
+    .wrapper .servicios .tipo-servicios i {
+      font-size: 30px;
+      color: #00acb5; }
+  .wrapper .img-lenguages {
+    width: 100%; }
+
+/* --------------------SECTIONS FIN------------------- */
+/* ======================================================================*/
+/* -----------------INICIO FOOTER-------------------- */
+footer {
+  text-align: center;
+  background-color: #152d35;
+  color: #fff;
+  padding: 5px;
+  width: 100%; }
+  footer .logofooter {
+    width: 180px;
+    text-align: center; }
+  footer div a {
+    font-size: 12px;
+    width: 100%; }
+  footer .ft {
+    text-align: center;
+    font-size: 15px; }
+  footer div .logo-footer {
+    width: 150px;
+    text-align: center; }
+  footer .redes {
+    color: #fff; }
+    footer .redes a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #00acb5;
+      transition: 0.5s;
+      padding: 5px; }
+      footer .redes a:hover {
+        color: #fff;
+        font-size: 25px;
+        transition: 0.2seg; }
+
+/* ------------------FIN FOOTER-------------- */
+/* ======================================================================*/
