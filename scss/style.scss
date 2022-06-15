@@ -8,7 +8,18 @@ $color2:#00acb5;
 $color3:#000;
 $color4:#fff;
 $color5: #d9bb96;
-/*FIN colors*/
+/*FIN colors*/ 
+
+/* fonts sizes */
+$headings: (
+    h1: 4em,
+    h2: 3em,
+    h3:2em,
+    h4:1em,
+    p: 3em
+);
+
+
 
 *{
     margin: 0;
@@ -16,10 +27,15 @@ $color5: #d9bb96;
     box-sizing: border-box;
 }
 
+@mixin base ($width, $height, $bgcolor) {
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+}
+
 body{
     font-family: $font;
     background-image: url(../img/fondo.png);
-
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -51,10 +67,12 @@ body{
 /*--------------------- INICIA Header all pages--------------------- */
 
 header {
+    @include base(auto, max-content, $color1);
+    font-size: 20px;
     height: max-content;
     background-color: $color1;
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
 
     .logotipe {
         width: 250px;
@@ -100,7 +118,7 @@ main{
     h1 {
         text-align: center;
         color: $color4;
-        font-size: 2.5em;
+        font-size: 40px;
 
         span{
             color: $color2;
@@ -108,7 +126,6 @@ main{
     }
 
     p{
-        font-size: 1.5rem;
         text-align: center;
         color: $color4;
         font-size: 16px;
@@ -232,7 +249,7 @@ section .container{
             }
 
             p{
-            font-size: 10pt;
+            font-size: 25px;
             width: 100%;
             margin: 0 ;
             padding: 0;
@@ -250,7 +267,7 @@ section .container{
     .servicios{ 
         text-align: center;
         p {
-            font-size: 18px;
+            font-size: 25px;
         }
 
         i{
@@ -292,8 +309,9 @@ section .container{
 
 /* -----------------INICIO FOOTER all pages-------------------- */
 footer {
+    @include base(auto, max-content, $color1);
+    display: grid;
     text-align: center;
-    background-color: $color1;
     color: $color4;
     padding: 5px;
     width: 100%;
@@ -308,10 +326,10 @@ footer {
         width: 100%;
     }
 
-    .ft{
+    p{
         text-align: center;
         font-size: 15px;
-        
+
     }
 
     div .logo-footer {
@@ -405,10 +423,6 @@ footer {
 /* ----------------FIN ABOUT ME ----------------- */
 
 
-
-
-
-
 /* -----------PORTFOLIO INICIA MAIN -------------- */
 
 .content-porf{
@@ -471,7 +485,14 @@ h2{
 }
 /* -----------FIN MAIN PURPOSE ------------- */
 
+.bg-pose {
 
+    bg-logo{
+        background-size: cover;
+        width: 100%;
+    }
+
+}
 
 /* ------------------FORM CONTACT ME-------------- */
 
@@ -533,14 +554,14 @@ form {
             display: block;
             transform-origin: center center;
             transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: translate(5em);
+            }
         }
 
         .svg-wrapper:hover {
             animation: fly-1 0.6s ease-in-out infinite alternate;
-        }
-
-        svg:hover {
-            transform: translate(5em);
         }
 
         .button-send:active {

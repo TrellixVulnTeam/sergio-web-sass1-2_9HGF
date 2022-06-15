@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@200&display=swap");
 /* Colors page */
 /*FIN colors*/
+/* fonts sizes */
 * {
   margin: 0;
   padding: 0;
@@ -32,10 +33,14 @@ body {
 /* ======================================================================*/
 /*--------------------- INICIA Header all pages--------------------- */
 header {
+  width: auto;
+  height: max-content;
+  background-color: #152d35;
+  font-size: 20px;
   height: max-content;
   background-color: #152d35;
   color: #fff;
-  font-size: 20px; }
+  font-size: 22px; }
   header .logotipe {
     width: 250px;
     margin-left: auto;
@@ -69,11 +74,10 @@ main {
   main h1 {
     text-align: center;
     color: #fff;
-    font-size: 2.5em; }
+    font-size: 40px; }
     main h1 span {
       color: #00acb5; }
   main p {
-    font-size: 1.5rem;
     text-align: center;
     color: #fff;
     font-size: 16px; }
@@ -162,7 +166,7 @@ section .container {
     section .container .face .face2:hover .face.face2 {
       transform: translateY(0); }
     section .container .face .face2 p {
-      font-size: 10pt;
+      font-size: 25px;
       width: 100%;
       margin: 0;
       padding: 0;
@@ -176,7 +180,7 @@ section .container {
   .wrapper .servicios {
     text-align: center; }
     .wrapper .servicios p {
-      font-size: 18px; }
+      font-size: 25px; }
     .wrapper .servicios i {
       font-size: 30px;
       color: #00acb5; }
@@ -200,8 +204,11 @@ section .container {
 /* ======================================================================*/
 /* -----------------INICIO FOOTER all pages-------------------- */
 footer {
-  text-align: center;
+  width: auto;
+  height: max-content;
   background-color: #152d35;
+  display: grid;
+  text-align: center;
   color: #fff;
   padding: 5px;
   width: 100%; }
@@ -211,7 +218,7 @@ footer {
   footer div a {
     font-size: 12px;
     width: 100%; }
-  footer .ft {
+  footer p {
     text-align: center;
     font-size: 15px; }
   footer div .logo-footer {
@@ -315,6 +322,10 @@ footer {
     width: 100%; }
 
 /* -----------FIN MAIN PURPOSE ------------- */
+.bg-pose bg-logo {
+  background-size: cover;
+  width: 100%; }
+
 /* ------------------FORM CONTACT ME-------------- */
 form {
   background-size: 100vw 100vh;
@@ -365,10 +376,10 @@ form {
       display: block;
       transform-origin: center center;
       transition: transform 0.3s ease-in-out; }
+      form .button-send svg:hover {
+        transform: translate(5em); }
     form .button-send .svg-wrapper:hover {
       animation: fly-1 0.6s ease-in-out infinite alternate; }
-    form .button-send svg:hover {
-      transform: translate(5em); }
     form .button-send .button-send:active {
       transform: scale(0.95); }
 
