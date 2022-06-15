@@ -12,13 +12,14 @@ $color5: #d9bb96;
 
 /* fonts sizes */
 $headings: (
-    h1: 4em,
-    h2: 3em,
-    h3:2em,
-    h4:1em,
-    p: 3em
+    h1: 40px,
+    h2: 32px,
+    h3:15px,
 );
 
+$h1: map-get($headings, h1);
+$h2: map-get($headings, h2);
+// fin tamaño titulos "mapas"
 
 
 *{
@@ -308,6 +309,12 @@ section .container{
 /* ======================================================================*/
 
 /* -----------------INICIO FOOTER all pages-------------------- */
+@mixin sizes($width, $height, $bcolor) {
+    height: $height;
+    width: $width;
+    background-color: $bcolor;  
+}
+
 footer {
     @include base(auto, max-content, $color1);
     display: grid;
