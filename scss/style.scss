@@ -115,7 +115,7 @@ main{
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
+    
     h1 {
         text-align: center;
         color: $color4;
@@ -129,7 +129,7 @@ main{
     p{
         text-align: center;
         color: $color4;
-        font-size: 16px;
+        font-size: 20px;
         
     }
 
@@ -185,8 +185,8 @@ section .container{
         position: relative;
         background-color: $color4;
         box-shadow: 1px 10px 25px rgba(0,0,0,0.5);
-        font-size: 10px;
-        overflow: auto;
+        
+
 
 
         .face{
@@ -218,7 +218,7 @@ section .container{
                     text-align: center;
             
                     i{
-                    font-size: 3em;
+                    font-size: 8em;
                     color: $color4;
                     display: inline-block; 
                     }
@@ -250,7 +250,7 @@ section .container{
             }
 
             p{
-            font-size: 25px;
+            font-size: 30px;
             width: 100%;
             margin: 0 ;
             padding: 0;
@@ -267,8 +267,12 @@ section .container{
 
     .servicios{ 
         text-align: center;
-        p {
-            font-size: 25px;
+        .pSection {
+            font-size: 20px;
+        }
+
+        h4  {
+            @extend .pSection;
         }
 
         i{
@@ -401,23 +405,22 @@ footer {
     }
 
     p{
-        font-size: 1.5rem;
+        font-size: 20px;
         text-align: center;
         color: $color4;
-        font-size: 16px;
         
     }
 
     .clicks {
-    font-family: inherit;
-    font-size: 15px;
-    background: $color2;
-    color: $color4;
-    border-radius: 15px;
-    border: none;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    transition: all 0.2s;
+            font-family: inherit;
+            font-size: 15px;
+            background: $color2;
+            color: $color4;
+            border-radius: 15px;
+            border: none;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            transition: all 0.2s;
 
     &:hover{
         animation: fly-1 0.6s ease-in-out infinite alternate;
