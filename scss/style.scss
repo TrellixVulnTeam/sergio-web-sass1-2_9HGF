@@ -69,11 +69,11 @@ body{
 
 header {
     @include base(auto, max-content, $color1);
-    font-size: 20px;
+    font-size: 18px;
     height: max-content;
     background-color: $color1;
     color: #fff;
-    font-size: 22px;
+    
 
     .logotipe {
         width: 250px;
